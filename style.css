@@ -1,0 +1,339 @@
+/* General Body Styles */
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+    line-height: 1.7; /* Increased line height for better readability */
+    margin: 0;
+    padding: 25px; /* Slightly more padding */
+    background-color: #eef5ee; /* Lighter, fresher background */
+    color: #333;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border-radius: 12px; /* More rounded corners */
+    overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Blue gradient for a fresh look */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.5em; /* Main title slightly larger */
+    letter-spacing: -0.5px;
+}
+
+header h2 {
+    font-size: 1.8em; /* Subtitle significantly larger */
+    margin-top: 10px;
+    margin-bottom: 25px; /* Spacing below subtitle */
+    color: #f0f0f0; /* Lighter color for contrast */
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+nav ul li {
+    margin: 5px 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Make the whole area clickable */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Main Content Styles */
+main {
+    background-color: #ffffff;
+    padding: 35px; /* More padding */
+    border-radius: 0 0 12px 12px;
+}
+
+/* Section Headings */
+h2 {
+    color: #00796B; /* Teal color for main sections */
+    border-bottom: 2px solid #b2dfdb;
+    padding-bottom: 12px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2em; /* Larger section titles */
+    display: flex; /* For icon alignment */
+    align-items: center;
+}
+
+h3 {
+    color: #00897B; /* Darker teal for day titles */
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 1.6em; /* Day titles are also larger */
+    border-bottom: 1px dashed #e0f2f1;
+    padding-bottom: 10px;
+    display: flex; /* For icon alignment */
+    align-items: center;
+}
+
+h4 {
+    color: #26a69a; /* Lighter teal for sub-headings */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Icons within headings */
+.emoji {
+    font-size: 1.2em; /* Size for emojis in headings */
+    margin-left: 10px;
+    color: #ffb300; /* Yellow for visibility */
+}
+
+/* Icons within table rows */
+.table-emoji {
+    font-size: 1.1em;
+    margin-right: 5px; /* Space between emoji and text */
+    vertical-align: middle;
+    color: #78909c; /* Grayish color for table emojis */
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Strong/Bold text */
+strong {
+    color: #212121;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate to allow border-radius on cells if needed */
+    border-spacing: 0; /* Remove default spacing for separate borders */
+    margin-top: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07); /* Clearer shadow */
+    border-radius: 8px; /* Slightly rounded table */
+    overflow: hidden; /* Ensures rounded corners are applied */
+}
+
+th, td {
+    border: 1px solid #e0f2f1; /* Lighter border for table cells */
+    padding: 15px 18px; /* More padding in cells */
+    text-align: left;
+    vertical-align: top; /* Align content to top */
+}
+
+th {
+    background-color: #e0f7fa; /* Light blue-green for headers */
+    color: #006064; /* Darker blue-green for header text */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fdfd; /* Very light alternative row color */
+}
+
+tbody tr:hover {
+    background-color: #e0f2f1; /* Hover effect */
+    cursor: default;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 150, 136, 0.3), rgba(0, 0, 0, 0)); /* Teal gradient HR */
+    margin: 50px 0;
+}
+
+/* Specific Section Styles */
+#overview ul li strong {
+    color: #00796B; /* Teal for emphasis in overview */
+}
+
+.lesson-day {
+    background-color: #fafffa;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-day h3 {
+    color: #1b5e20;
+    border-bottom: 1px dashed #a5d6a7;
+    padding-bottom: 12px;
+}
+
+/* 세특 기재 가이드라인 강조 */
+#sepec-guideline p strong {
+    color: #D32F2F; /* Red color for emphasis */
+}
+#sepec-guideline ul li strong {
+    color: #C2185B; /* Darker red for bullet points */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    color: #777;
+    font-size: 0.95em;
+    border-top: 1px solid #eee;
+    background-color: #f0f4f7; /* Light background for footer */
+    border-radius: 0 0 12px 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        width: 80%; /* Make nav items wider for easier tap */
+    }
+    
+    nav ul li a {
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2, h3 {
+        font-size: 1.6em; /* Adjust heading sizes */
+    }
+
+    /* Table responsive styling */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #555;
+    }
+
+    /* Label the data */
+    td:nth-of-type(1):before { content: "단계"; }
+    td:nth-of-type(2):before { content: "시간"; }
+    td:nth-of-type(3):before { content: "교수 활동"; }
+    td:nth-of-type(4):before { content: "학습 활동"; }
+    td:nth-of-type(5):before { content: "세특 기재 가능 요소"; }
+
+    td:last-child {
+        border-bottom: none;
+    }
+}
+
+/* @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    header h2 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+} */
